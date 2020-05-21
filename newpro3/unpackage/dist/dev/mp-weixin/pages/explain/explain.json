@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "讲解",
-  "usingComponents": {
-    "luch-audio": "/components/luch-audio/luch-audio",
-    "audio": "/components/luch-audio/luch-audio"
-  }
-}

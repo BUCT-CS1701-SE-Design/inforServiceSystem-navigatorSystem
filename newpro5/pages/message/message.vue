@@ -85,12 +85,21 @@
 		</view>
 		
 		
+<<<<<<< HEAD
+=======
+		<!-- //评论组件 -->
+		<comments :comments="commentts"></comments>
+		
+>>>>>>> 93c67e071c52a5167cb5fb8cfc938b8f6d5d82f4
 		
 		<!-- 后端渲染-展览模块 -->
 		<view v-for="item in exhibitionList" :key="item.pk" @click="goExhibitionInfo(item.pk)">
 			<image :src="item.fields.exhibition_picture">{{item.fields.exhibitiontheme}}</image>
 		</view>
+<<<<<<< HEAD
 		<comments :comments="commentts"></comments>
+=======
+>>>>>>> 93c67e071c52a5167cb5fb8cfc938b8f6d5d82f4
 		
 	</view>
 </template>
