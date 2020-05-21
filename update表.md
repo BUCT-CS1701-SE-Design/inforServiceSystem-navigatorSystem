@@ -56,3 +56,5 @@
 石望远：添加推荐页面api
 
 石望远：添加排行榜页面api和map-list页面api
+
+钱晋：更新museum

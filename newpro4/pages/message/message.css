@@ -1,5 +1,5 @@
 page{
-	background-color: #FFFFFF;
+	background-color: #FFFFFF; 
 }
 /* 标题图片 */
 .musuemPicture_yrn{
@@ -39,7 +39,7 @@ page{
 /* 导航栏 */
 .navigation_yrn {
 }
-.navigation_yrn ul {
+.navigation_ul_yrn {
     list-style-type: none;
     width:100%;
     overflow: hidden;
@@ -47,11 +47,11 @@ page{
     text-align:center;
 	padding-left: 0;
 }
-.navigation_yrn ul li {
+.navigation_li_yrn {
     display:inline-block;
     margin:5rpx 30rpx;
 }
-.navigation_yrn ul li a {
+.navigation_li_yrn a {
     border-radius: 10rpx;
 	padding: 5rpx 20rpx;
 	color:#808080;
@@ -60,7 +60,7 @@ page{
 	font-size: 25rpx;
 }
 /* 鼠标移动到选项上修改背景颜色 */
-.navigation_yrn ul li a:hover {
+.navigation_li_yrn a:hover {
     background-color: lightskyblue;
 }
 
@@ -76,11 +76,13 @@ page{
 	margin-bottom: 10rpx;
 }
 
-/* 讲解 */
+/* 外层包裹卡片 */
 .card_qj{
 	border-top: 15rpx solid #f1f1f1;
 	padding: 20rpx;
-} /* 外层包裹卡片 */
+} 
+
+/* 讲解 */
 .explain_qj{
 	/* border-bottom: 3rpx solid #f1f1f1; */
 	padding-bottom: 0rpx;
@@ -89,29 +91,13 @@ page{
 	padding-top: 10rpx;
 	padding-bottom: 7rpx;
 }
-.tag_qj ul{
-	padding-left: 0;
-}
-.tag_qj ul li{
-	display: inline-block;
-    padding: 12rpx 18rpx;
-    border: 2rpx solid gray;
-    border-radius: 6rpx;
-	margin-right: 5rpx;
-	text-align: center;
-    font-weight: 400;
-    font-size: 15rpx;
-    color: gray;
-}
-/* 鼠标移至后标签的颜色修改 */
-.tag_qj ul li:hover{
-	color: #FFFFFF;
-	background-color: #000000;
-}
+
 /* 按钮样式 */
 .unlock_qj{
 	float: right;
-	padding: 5rpx 20rpx;
+	padding: 8rpx 20rpx;
+	margin-left: 20rpx;
+	vertical-align: middle;
     background-color: #87CEFA; /* LightSkyBlue */
     border-radius: 25rpx;
     border: none;
@@ -125,7 +111,8 @@ page{
 }
 .unlock_yrn{
 	float: right;
-	padding: 5rpx 20rpx;
+	padding: 8rpx 25rpx;
+	
     background-color: #87CEFA; /* LightSkyBlue */
     border-radius: 25rpx;
     border: none;
@@ -137,19 +124,9 @@ page{
     background-color: #4A81AA;
 	color: #FFFFFF;
 }
+
 /* 讲解要点 */
-.explainPoint_qj{
-	margin: 15px;
-	text-align: center;
-}
-.explainPoint_qj p{
-	display: inline-block;
-	font-size: 20rpx;
-	margin: 5rpx 40rpx;
-}
-.explainPoint_qj text{
-	color: #888888;
-}
+
 /* 试听 */
 .audition_qj button{
 	display: inline-block;
@@ -168,21 +145,22 @@ page{
 	background-color: #4A81AA;
 	color: #FFFFFF;
 }
+
 /* 讲解员tag */
 .guideIntro_qj{
-	/* border-top: 2px solid #f1f1f1; */
-	/* margin-top: 10px; */
-	padding-top: 20px;
-	margin-bottom: 70px;
+/* 	border-top: 2px solid #f1f1f1;
+	margin-top: 10px; */
+	padding-top: 10px;
+	margin-bottom: 80px;
 }
-.guideIntro_qj p{
+.guideLeft_qj{
 	float: left;
 }
-.guideIntro_qj img{
+.guideLeft_qj img{
 	border-radius: 50%;
 	vertical-align: middle;
 }
-.guideIntro_qj text{
+.guideLeft_qj text{
 	display: inline-block;
 	vertical-align: middle;
 	margin: 5rpx;
@@ -194,7 +172,13 @@ page{
 	border-radius: 5rpx;
 	color: #4A81AA;
 }
-
+.guideLogo_qj:hover{
+	background-color: #4A81AA;
+	color: #FFFFFF;
+}
+.guideRight_qj{
+	margin-top: 25rpx;
+}
 /* 讲解录制 */
 .recordExplain_qj{
 	text-align: center;
@@ -213,22 +197,22 @@ page{
 /* 藏品与展览 */
 .picContent_qj{
 	position: relative;
-    height: 250rpx;
+    height: 550rpx;
     margin-bottom: 25rpx;
     overflow-x: scroll; /* 总显示滚动条 */
     overflow-y: hidden; /* 超出隐藏 */
     white-space: nowrap; /* 段落中的文本:文本不换行直到<br> */
 }
-.picContent_qj text{
+/* .picContent_qj text{
 	font-size: 20rpx;
-}
-.picContent_qj ul{
+} */
+.picContent_ul_qj{
     position: absolute;
     left: 0;
     top: 20rpx;
     display: flex;
 }
-.picContent_qj ul li{
+.picContent_li_qj{
     float: left;
     min-width: 300rpx;
     max-height: 295rpx;
