@@ -1,44 +1,50 @@
 <template>
 	<view>
-	        <view class="page-body">
-	            <luch-audio src="https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.mp3" play.sync="audioPlay"></luch-audio>
-				<view class="page-section page-section-gap" style="text-align: center;">
-				    <luch-audio 
-					:src="src" 
-					:poster="poster" 
-					:name="name" 
-					:author="author" 
-					:play.sync="audioPlay"
-					></luch-audio>
-				</view>
+	       <view class="page-body">
+	             <view class="page-section page-section-gap1" style="text-align: center;">
+	                   <audio style="text-align: left" :src="current.src" :poster="current.poster" :name="current.name" :author="current.author" :action="audioAction" controls></audio>
+	             </view>
+				 <view class="page-section page-section-gap2" style="text-align: center;">
+				       <audio style="text-align: left" :src="current.src" :poster="current.poster" :name="current.name" :author="current.author" :action="audioAction" controls></audio>
+				 </view>
+				 <view class="page-section page-section-gap3" style="text-align: center;">
+				       <audio style="text-align: left" :src="current.src" :poster="current.poster" :name="current.name" :author="current.author" :action="audioAction" controls></audio>
+				 </view>
+				 <view class="page-section page-section-gap4" style="text-align: center;">
+				       <audio style="text-align: left" :src="current.src" :poster="current.poster" :name="current.name" :author="current.author" :action="audioAction" controls></audio>
+				 </view>
+				 <view class="page-section page-section-gap5" style="text-align: center;">
+				       <audio style="text-align: left" :src="current.src" :poster="current.poster" :name="current.name" :author="current.author" :action="audioAction" controls></audio>
+				 </view>
+				 <view class="page-section page-section-gap6" style="text-align: center;">
+				       <audio style="text-align: left" :src="current.src" :poster="current.poster" :name="current.name" :author="current.author" :action="audioAction" controls></audio>
+				 </view>
+				 <view class="page-section page-section-gap7" style="text-align: center;">
+				       <audio style="text-align: left" :src="current.src" :poster="current.poster" :name="current.name" :author="current.author" :action="audioAction" controls></audio>
+				 </view>
+				 <view class="page-section page-section-gap8" style="text-align: center;">
+				       <audio style="text-align: left" :src="current.src" :poster="current.poster" :name="current.name" :author="current.author" :action="audioAction" controls></audio>
+				 </view>
 	        </view>
+
 	    </view>
 </template>
 
 <script>
-	//const innerAudioContext = uni.createInnerAudioContext();
-	import Audio from '../../components/luch-audio/luch-audio.vue'
 	export default {
 	    data() {
 	        return {
-	            play: true,
-	            src: 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.mp3',
-	            poster: 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.jpg',
-	            name: '博物馆讲解',
-	            author: '云锦'
+	            current: {
+	                        poster: 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.jpg',
+	                        name: '致爱丽丝',
+	                        author: '暂无',
+	                        src: 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.mp3',
+	                        },
+	            audioAction: {
+	                         method: 'pause'
+	                        }
 	        }
-	    },
-		components: {
-			Audio
-		},
-		methods:{
-			audioPlay() {
-				this.$emit('update:play', true);
-			},
-			audioPause() {
-				this.$emit('update:play', false);
-			}
-			}
+	    }
 	}
 	
 </script>
