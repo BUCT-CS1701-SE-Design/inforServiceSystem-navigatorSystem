@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "博物馆信息",
+  "usingComponents": {
+    "audio": "/components/luch-audio/luch-audio"
+  }
+}
