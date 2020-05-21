@@ -1,0 +1,34 @@
+
+.home-list-item_yym.data-v-3158028c{
+	padding: 20rpx;
+	border-top: 1rpx solid #F4F4F4;
+	border-bottom: 1rpx solid #F4F4F4;
+}
+.home-list-item_yym>view.data-v-3158028c:first-child{
+	color: #333333;
+}
+.home-list-item_yym>view:first-child>view.data-v-3158028c{
+	margin-right: 10rpx;
+}
+.home-list-item_yym>view.data-v-3158028c:last-child{
+	color: #CCCCCC;
+}
+.home-list-hover_yym.data-v-3158028c{
+	background: #f4f4f4;
+}
+.iconfont_yym.data-v-3158028c {
+	  /*font-family: "iconfont" !important;
+ */
+	  font-size: 16px;
+	  font-style: normal;
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+	  -webkit-align-self: flex-start;
+	          align-self: flex-start;
+}
+/*
+.icon-jinru_yym:before {
+  content: "\e60c";
+}*/
+
+
