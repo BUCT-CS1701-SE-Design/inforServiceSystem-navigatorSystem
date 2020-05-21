@@ -117,7 +117,7 @@
 				},
 				showMoreMsg_qj: {
 					showJud_qj: false,
-					showTxt_qj: "展示"
+					showTxt_qj: "更多信息"
 				},
 				museumInfo: [],
 				exhibitionList: [],
