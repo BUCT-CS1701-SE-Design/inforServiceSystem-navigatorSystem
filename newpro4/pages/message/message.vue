@@ -21,9 +21,11 @@
 		<!-- 简介 -->
 		<view class="introduction_yrn" v-for="item in museumInfo" :key="item.pk">
 			<h5 id="intro_yrn">简介</h5>
-			<p class="ppp_yrn">{{item.fields.introduction}}</p>
-			<!-- 展开 收起部分 start-->
-			<!-- end  -->
+			<p :class="[showMoreMsg_qj.showJud_qj?'introductionshow_qj':'introductionhide_qj']">{{item.fields.introduction}}</p>
+			<!-- 展开 收起部分 -->
+			<view class="introCenter_qj">
+				<view class="introCenterMsg_qj" @tap="showMore_qj()">{{showMoreMsg_qj.showTxt_qj}}<i :class="[showMoreMsg_qj.showJud_qj?'fa fa-angle-up':'fa fa-angle-down']"></i></view>
+			</view>
 		</view>
 		
 		<!-- 讲解模块 -->
@@ -90,11 +92,11 @@
 				array_yrn: {
 					mode:'widthFix',
 					image_yrn: 'https://www.dpm.org.cn/Uploads/Picture/2020/04/29/s5ea9744238b72.jpg',
-					title_yrn: "故宫博物馆",
-					p_yrn: "北京的代表性景点，古老中国的特征",
-					ppp_yrn: "根据当前北京市疫情防控形势，故宫博物院自2020年5月1日起有序开放，实行预约、错峰、限流参观。相关事宜公告如下.有人说，不到西安，就不算到中国，不见兵马俑，就不算到西安。是的，西安的奇迹太多了，而兵马俑则可以说是奇迹中的奇迹。最古老的兵马俑，如今已经成了西安乃至中国的金字名片。",
+					title_yrn: "博物馆",
+					p_yrn: "",
 					// explainTitle1_qj: "故宫博物馆讲解",
-					guideName_qj: "  三毛游",
+					// ppp_yrn: "暂无简介",
+					guideName_qj: "  导游",
 					guideTag_qj: "官方讲解"
 				},
 				current: {
@@ -113,6 +115,10 @@
 					exhName3: "展览三",
 					exhName4: "展览四"
 				},
+				showMoreMsg_qj: {
+					showJud_qj: false,
+					showTxt_qj: "展示"
+				},
 				museumInfo: [],
 				exhibitionList: [],
 				collectionList: [],
@@ -123,6 +129,10 @@
 			Audio
 		},
 		methods: {
+			showMore_qj: function() {
+				this.showMoreMsg_qj.showJud_qj= !this.showMoreMsg_qj.showJud_qj
+				this.showMoreMsg_qj.showTxt_qj= "继续阅读"
+			},
 			goDetail_qj: function() {
 				uni.navigateTo({
 				    url: '../exhibition/exhibition'
