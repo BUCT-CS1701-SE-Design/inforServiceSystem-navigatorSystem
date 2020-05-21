@@ -189,23 +189,37 @@
 				})
 			},
 			logout_yym() {
-				var globalUser = this.getGlobalUser("globalUser");
-				var serverUrl = this.serverUrl;
-				uni.request({
-					url: serverUrl + '/user/logout?userId=' + globalUser.id,
-					method: "POST",
-					success: (res) => {
-						// 获取真实数据之前，务必判断状态是否为200
-						if (res.data.status == 200) {
-							// 如果服务器返回200，代表用户在服务端退出登录成功
-							uni.removeStorageSync("globalUser");
-							uni.switchTab({
-								url: "../me/me"
-							})
+										uni.showToast({title: '退出登录成功！',
+									                   icon: 'none',
+													   success: () => {
+							                    setTimeout(() => {//uni.switchTab可跳转tabBar路径
+							                        uni.navigateTo({//uni.navigateTo用于跳转非 tabBar 的页面的路径
+							                                url: "../login/login",//设置跳转路径，可传参，例如../recommend/list？useremail=''&password=''
+							                                success: res => {},//在list.vue的export default中onLoad用来接收参数
+							                                fail: () => {},
+							                                complete: () => {}
+							                            });	
+							                    }, 1500);
+							           }});
+								
+							
+							/* var globalUser = this.getGlobalUser("globalUser");
+							var serverUrl = this.serverUrl;
+							uni.request({
+								url: serverUrl + '/user/logout?userId=' + globalUser.id,
+								method: "POST",
+								success: (res) => {
+									// 获取真实数据之前，务必判断状态是否为200
+									if (res.data.status == 200) {
+										// 如果服务器返回200，代表用户在服务端退出登录成功
+										uni.removeStorageSync("globalUser");
+										uni.switchTab({
+											url: "../me/me"
+										})
+									}
+								}
+							}); */
 						}
-					}
-				});
-			}
 		}
 	}
 </script>
