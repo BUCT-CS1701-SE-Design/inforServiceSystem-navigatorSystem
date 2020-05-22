@@ -115,6 +115,7 @@
 		    "style" : {
 				"backgroundColor":"#333333",
 				"enablePullDownRefresh" : true ,
+				"navigationBarTitleText":"目的地",
 				"app-plus": {
 									"bounce": "none",
 									"titleNView": {
@@ -197,25 +198,25 @@
 			"list":[
 				{
 						"pagePath": "pages/recommend/list",
-						"iconPath": "static/icon/推荐.png",
-						"selectedIconPath": "static/icon/推荐y.png",
+						"iconPath": "static/icon/TJ.png",
+						"selectedIconPath": "static/icon/TJy.png",
 						"text": "推荐"
 					},
 					{
 							"pagePath": "pages/sorting/sorting",
-							"iconPath": "static/icon/排行榜.png",
-							"selectedIconPath": "static/icon/排行榜(1).png",
+							"iconPath": "static/icon/PHB.png",
+							"selectedIconPath": "static/icon/PHBy.png",
 							"text": "排行榜"
 						},
 						{"pagePath": "pages/demination/demination",
-							"iconPath": "static/icon/目的地.png",
-							"selectedIconPath": "static/icon/目的地y.png",
+							"iconPath": "static/icon/MDD.png",
+							"selectedIconPath": "static/icon/MDDy.png",
 							"text": "目的地"
 						},
 						{
 								"pagePath": "pages/my/my",
-								"iconPath": "static/icon/我的.png",
-								"selectedIconPath": "static/icon/我的y.png",
+								"iconPath": "static/icon/MY.png",
+								"selectedIconPath": "static/icon/MYy.png",
 								"text": "我的"
 							}
 			]

@@ -1,1 +1,0 @@
-<view><view><button data-event-opts="{{[['tap',[['loginin',['$event']]]]]}}" bindtap="__e">点击</button></view></view>

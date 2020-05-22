@@ -22,9 +22,6 @@
 				 <view class="page-section page-section-gap7" style="text-align: center;">
 				       <audio style="text-align: left" :src="current7.src" :poster="current7.poster" :name="current7.name" :author="current7.author" :action="audioAction" controls></audio>
 				 </view>
-				 <view class="page-section page-section-gap8" style="text-align: center;">
-				       <audio style="text-align: left" :src="current8.src" :poster="current8.poster" :name="current8.name" :author="current8.author" :action="audioAction" controls></audio>
-				 </view>
 	        </view>
 
 	    </view>
@@ -38,49 +35,43 @@
 	                        poster: 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.jpg',
 	                        name: '锦绣中华-斜纹和缎纹',
 	                        author: '灶物者',
-	                        src: '../../static/music/锦绣中华-斜纹和缎纹.mp3',
+	                        src: '../../static/music/7.mp3',
 	                        },
 				current2: {
 				            poster: 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.jpg',
 				            name: '锦绣中华-把你织成花',
 				            author: '灶物者',
-				            src: '../../static/music/锦绣中华-把你织成花.mp3',
+				            src: '../../static/music/1.mp3',
 				            },
 				current3: {
 				            poster: 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.jpg',
 				            name: '锦绣中华-色彩斑斓 金光璀璨',
 				            author: '灶物者',
-				            src: '../../static/music/锦绣中华-色彩斑斓 金光璀璨.mp3',
+				            src: '../../static/music/5.mp3',
 				            },
 				current4: {
 				            poster: 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.jpg',
 				            name: '锦绣中华-天上取样人间绣',
 				            author: '灶物者',
-				            src: '../../static/music/锦绣中华-天上取样人间绣.mp3',
+				            src: '../../static/music/6.mp3',
 				            },
 				current5: {
 				            poster: 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.jpg',
 				            name: '锦绣中华-给织物点颜色瞧瞧',
 				            author: '灶物者',
-				            src: '../../static/music/锦绣中华-给织物点颜色瞧瞧.mp3',
+				            src: '../../static/music/3.mp3',
 				            },
 				current6: {
 				            poster: 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.jpg',
 				            name: '锦绣中华-平纹织物进化史',
 				            author: '灶物者',
-				            src: '../../static/music/锦绣中华-平纹织物进化史.mp3',
+				            src: '../../static/music/4.mp3',
 				            },
 				current7: {
 				            poster: 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.jpg',
 				            name: '锦绣中华-纺织之初',
 				            author: '灶物者',
-				            src: '../../static/music/锦绣中华-纺织之初.mp3',
-				            },
-				current8: {
-				            poster: 'https://img-cdn-qiniu.dcloud.net.cn/uniapp/audio/music.jpg',
-				            name: '锦绣中华-平纹织物进化史',
-				            author: '灶物者',
-				            src: '../../static/music/锦绣中华-平纹织物进化史.mp3',
+				            src: '../../static/music/2.mp3',
 				            },
 	            audioAction: {
 	                         method: 'pause'

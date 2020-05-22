@@ -168,7 +168,7 @@
 					let item=this.markers.push({
 				longitude:res[1].data.result.location.lng ,
 				latitude: res[1].data.result.location.lat,
-				iconPath: '../../static/icon/定位.png',
+				iconPath: '../../static/icon/DW.png',
 				label: {
 					content:this.chinaLocation[i].museumname,
 				},

@@ -13,7 +13,7 @@
 		
 		
 		</view>
-		
+	
 		
 	<view class="city">
 		
@@ -46,37 +46,37 @@
 			return {
 				hotcity_listdata:[
 					{
-						img:"../../static/icon/北京.jpg",
+						img:"../../static/icon/BeiJing.jpg",
 						city_name:"北京"
 					},
 					{
-						img:"../../static//icon/上海.jpg",
+						img:"../../static//icon/ShangHai.jpg",
 						city_name:"上海"
 					},
 					{
-						img:"../../static//icon/广州.jpg",
+						img:"../../static//icon/GuangZhou.jpg",
 					city_name:"广州"
 					},
 					{
-						img:"../../static/icon/南京.jpg",
+						img:"../../static/icon/NanJing.jpg",
 					city_name:"南京"
 					}
 				],
 				listdata:[
 					{
-						img:"../../static/icon/北京.jpg",
+						img:"../../static/icon/BeiJing.jpg",
 						city_name:"北京"
 					},
 					{
-						img:"../../static//icon/上海.jpg",
+						img:"../../static//icon/ShangHai.jpg",
 						city_name:"上海"
 					},
 					{
-						img:"../../static//icon/广州.jpg",
+						img:"../../static//icon/GuangZhou.jpg",
 					city_name:"广州"
 					},
 					{
-						img:"../../static/icon/南京.jpg",
+						img:"../../static/icon/NanJing.jpg",
 					city_name:"南京"
 					}
 				],

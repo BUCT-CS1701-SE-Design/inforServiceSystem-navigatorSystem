@@ -1,7 +1,7 @@
 {
-    "name" : "my",
-    "appid" : "",
-    "description" : "",
+    "name" : "musuem_JK1701",
+    "appid" : "__UNI__05CDDA0",
+    "description" : "软件工程计科1701班",
     "versionName" : "1.0.0",
     "versionCode" : "100",
     "transformPx" : false,
@@ -50,7 +50,9 @@
             /* ios打包配置 */
             "ios" : {},
             /* SDK配置 */
-            "sdkConfigs" : {}
+            "sdkConfigs" : {
+                "ad" : {}
+            }
         }
     },
     /* 快应用特有相关 */
