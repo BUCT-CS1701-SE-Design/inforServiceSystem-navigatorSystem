@@ -168,27 +168,56 @@
 		"list":[
 			{
 					"pagePath": "pages/recommend/list",
-					"iconPath": "static/test/component.png",
-					"selectedIconPath": "static/test/componentHL.png",
+					"iconPath": "static/icon/推荐.png",
+					"selectedIconPath": "static/icon/推荐y.png",
 					"text": "推荐"
 				},
 				{
 						"pagePath": "pages/sorting/sorting",
-						"iconPath": "static/test/component.png",
-						"selectedIconPath": "static/test/componentHL.png",
+						"iconPath": "static/icon/排行榜.png",
+						"selectedIconPath": "static/icon/排行榜(1).png",
 						"text": "排行榜"
 					},
 					{"pagePath": "pages/demination/demination",
-						"iconPath": "static/test/component.png",
-						"selectedIconPath": "static/test/componentHL.png",
+						"iconPath": "static/icon/目的地.png",
+						"selectedIconPath": "static/icon/目的地y.png",
 						"text": "目的地"
 					},
 					{
 							"pagePath": "pages/my/my",
-							"iconPath": "static/test/api.png",
-							"selectedIconPath": "static/test/apiHL.png",
+							"iconPath": "static/icon/我的.png",
+							"selectedIconPath": "static/icon/我的y.png",
 							"text": "我的"
 						}
 		]
-	}
+	},
+	"tabBar": {
+			"color":"#C09460",
+			"selectedColor":"#4A81AA",
+			"list":[
+				{
+						"pagePath": "pages/recommend/list",
+						"iconPath": "static/icon/推荐.png",
+						"selectedIconPath": "static/icon/推荐y.png",
+						"text": "推荐"
+					},
+					{
+							"pagePath": "pages/sorting/sorting",
+							"iconPath": "static/icon/排行榜.png",
+							"selectedIconPath": "static/icon/排行榜(1).png",
+							"text": "排行榜"
+						},
+						{"pagePath": "pages/demination/demination",
+							"iconPath": "static/icon/目的地.png",
+							"selectedIconPath": "static/icon/目的地y.png",
+							"text": "目的地"
+						},
+						{
+								"pagePath": "pages/my/my",
+								"iconPath": "static/icon/我的.png",
+								"selectedIconPath": "static/icon/我的y.png",
+								"text": "我的"
+							}
+			]
+		}
 }
